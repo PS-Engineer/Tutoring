@@ -1,0 +1,211 @@
+:root {
+    --text-color: #1a1a1a;
+    --link-color: #1a1aff;
+    --bg-color: #fafafa;
+    --transition-time: .25s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background-color: var(--bg-color);
+    margin: 0 100px;
+    margin-bottom: 20px;
+}
+
+/* navbar */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    margin: 0 50px;
+    margin-bottom: 50px;
+}
+
+nav .left a {
+    color: var(--text-color);
+    font-size: 22px;
+}
+
+nav .right a {
+    margin-right: 10px;
+    color:var(--text-color);
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+nav .right a:last-child {
+    margin-right: 0px;
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    /* transition: var(--transition-time); */
+}
+
+nav .right a:last-child:hover {
+    color: var(--text-color);
+    background-color: transparent;
+    transition: var(--transition-time);
+}
+
+/* section 1: hero */
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    margin: 0 50px;
+    gap: 20px;
+}
+
+.hero-section .text {
+    flex: 8;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-section .text span {
+    margin-bottom: 20px;
+}
+
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.hero-section .headshot img {
+    aspect-ratio: 1 / 1;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.hero-section .text .links {
+    /* display: inline-block; */
+    margin-top: 25px;
+}
+
+.hero-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 15px;
+
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+}
+
+.hero-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    transition: var(--transition-time);
+    cursor:pointer;
+}
+
+/* section 2: services */
+
+.services-section {
+    margin-top: 20px;
+    padding: 0 50px;
+}
+
+.services-section .cont {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 25px;
+    margin-top: 20px;
+    
+}
+
+.services-section .cont ul {
+    padding-left: 50px;
+}
+
+.services-section .cont .left {
+    flex: 5;
+}
+
+.services-section .cont .right {
+    flex: 5;
+}
+
+.services-section .cont .right p {
+    margin-top: 20px;
+    font-style: italic;
+}
+
+/* section 3: Experience */
+
+.experience-section {
+    margin: 0 50px;
+    margin-top: 50px;
+    
+}
+
+.experience-section .block .title {
+    font-size: 22px;
+    margin-top:30px;
+    font-weight: 600;
+    border-bottom: 2px solid var(--text-color);
+}
+
+/* section 4: Education */
+
+.education-section {
+    margin: 0 50px;
+    margin-top: 50px;
+}
+
+.education-section .block {
+    margin-top: 40px;
+}
+
+.education-section .block .title {
+    display: flex;
+    justify-content: left;
+    align-items:end;
+    gap: 25px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid var(--text-color);
+}
+
+.education-section .block .title img {
+    border-radius: 10px;
+    border: 2px solid var(--text-color);
+    /* aspect-ratio: 1 / 1; */
+    width: 200px;
+}
+
+.education-section .block .title span {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.education-section .block a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px 15px;
+
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+}
+
+.education-section .block a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    transition: var(--transition-time);
+    cursor:pointer;
+} 
