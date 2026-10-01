@@ -418,3 +418,14 @@ nav .right a:last-child:hover {
 
 }
 
+@media (max-width: 350px) {
+    /* section 4: education-section */
+    .education-section .block .title img {
+        width: 35px;
+    }
+
+    .education-section .block .title span {
+        font-size: 10px;
+    }
+}
+
