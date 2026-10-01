@@ -261,6 +261,7 @@ nav .right a:last-child:hover {
     background-color: var(--text-color);
     text-align: center;
     border: 2px solid var(--text-color);
+    border-radius: 5px;
     padding: 5px 15px;
 }
 
