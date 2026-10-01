@@ -407,5 +407,14 @@ nav .right a:last-child:hover {
         font-size: 12px;
     }
 
+    /* section 4: education */
+    .education-section .block .title {
+        gap: 5px;
+    }
+
+    .education-section .block .title span {
+        font-size: 12px;
+    }
+
 }
 
