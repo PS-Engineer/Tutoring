@@ -22,8 +22,9 @@ html {
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bg-color);
-    margin: 0 100px;
-    margin-bottom: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 /* navbar */
@@ -39,6 +40,7 @@ nav {
 
 nav .left a {
     color: var(--text-color);
+    font-weight: 500;
     font-size: 22px;
 }
 
@@ -92,10 +94,12 @@ nav .right a:last-child:hover {
     aspect-ratio: 1 / 1;
     width: 300px;
     border-radius: 50%;
+    border: 2px solid var(--text-color);
 }
 
 .hero-section .text .links {
     /* display: inline-block; */
+    margin: 0 auto;
     margin-top: 25px;
 }
 
@@ -162,6 +166,10 @@ nav .right a:last-child:hover {
     border-bottom: 2px solid var(--text-color);
 }
 
+.experience-section .block .text {
+    margin-top: 15px;
+}
+
 /* section 4: Education */
 
 .education-section {
@@ -170,7 +178,12 @@ nav .right a:last-child:hover {
 }
 
 .education-section .block {
-    margin-top: 40px;
+    margin-top: 20px;
+}
+
+.education-section .block:first-child {
+    margin-top:0px;
+    padding-top:0;
 }
 
 .education-section .block .title {
@@ -186,6 +199,7 @@ nav .right a:last-child:hover {
     border-radius: 10px;
     border: 2px solid var(--text-color);
     /* aspect-ratio: 1 / 1; */
+    padding: 5px 15px;
     width: 200px;
 }
 
@@ -209,3 +223,210 @@ nav .right a:last-child:hover {
     transition: var(--transition-time);
     cursor:pointer;
 } 
+
+.education-section .block .text {
+    margin-top: 15px;
+}
+
+/* Section 5: contact */
+
+.contact-section {
+    margin: 0 50px;
+}
+
+.contact-section h2 {
+    border-bottom: 2px solid var(--text-color);
+}
+
+.contact-section .block {
+    display: flex;
+    gap: 50px;
+    margin-top: 15px;
+}
+
+.contact-section .block .left {
+    flex:7;
+}
+
+.contact-section .block .right {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+
+    flex:3;
+}
+
+.contact-section .block .right a.form_link {
+    color: var(--bg-color);
+    background-color: var(--text-color);
+    text-align: center;
+    border: 2px solid var(--text-color);
+    border-radius: 5px;
+    padding: 5px 15px;
+}
+
+.contact-section .block .right a.form_link:hover {
+    color: var(--text-color);
+    background-color: transparent;
+    transition: var(--transition-time);
+}
+
+/* Resizing for smaller screens */
+/* MEDIA QUERIES */
+
+@media (max-width: 850px) {
+    /* SECTION 1: HERO */
+    .hero-section .text h1 {
+        font-size: 25px;
+    }
+
+    .hero-section {
+        flex-direction: column-reverse;
+    }
+
+    /* section 4: education */
+    .education-section .block .title img {
+        width: 100px;
+    }
+
+    /* section 5: contact */
+    .contact-section .block .left {
+        flex:5;
+    }
+
+    .contact-section .block .right {
+        flex:5;
+    }
+}
+
+@media (max-width: 650px) {
+
+    body {
+        font-size: 12px;
+        margin: 0;
+        padding-bottom: 25px;
+    }
+
+    /* navbar */
+    nav .right a span {
+        display: none;
+    }
+
+    nav .left a {
+        font-size: 16px;
+    }
+
+    /* section 1: hero */
+    .hero-section {
+        margin: 0 5px;
+    }
+
+    /* section 2: services */
+    .services-section {
+        padding:0 5px;
+        margin-left:0px;
+        margin-right: 0px;
+    }
+
+    .services-section .cont {
+        flex-direction: column;
+        gap:25px;
+    }
+
+    .services-section .cont .left ul {
+        columns: 2;
+    }
+
+    /* section 3: experience */
+    .experience-section {
+        margin: 0 5px;
+        margin-top: 15px;
+    }
+
+    .experience-section .block .title {
+        font-size: 14px;
+    }
+
+    /* section 4: education section */
+    .education-section {
+        margin: 0 5px;
+        margin-top: 15px;
+    }
+
+    .education-section .block .title img {
+        width: 50px;
+    }
+
+    .education-section .block .title span {
+        font-size: 14px;
+    }
+
+    /* section 5: contact section */
+    .contact-section {
+        margin: 0 5px;
+        margin-top: 15px;
+    }
+
+    .contact-section .block {
+        gap: 5px;
+        flex-direction: column-reverse;
+
+    }
+
+    .contact-section .block .right a {
+        font-size: 12px;
+        margin: 0 50px;
+
+    }
+}
+
+@media (max-width: 450px){
+
+    body {
+        font-size: 10px;
+        margin-top: 0;
+    }
+
+    /* navbar */
+    nav {
+        margin: 0 5px;
+        height: 100px;
+        margin-top: 0;
+    }
+
+    nav .left a {
+        font-size: 12px;
+    }
+
+    /* section 1: hero */
+    .hero-section .headshot img {
+        width:250px;
+    }
+
+    /* section 3: experience */
+    .experience-section .block .title {
+        font-size: 12px;
+    }
+
+    /* section 4: education */
+    .education-section .block .title {
+        gap: 5px;
+    }
+
+    .education-section .block .title span {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 350px) {
+    /* section 4: education-section */
+    .education-section .block .title img {
+        width: 35px;
+    }
+
+    .education-section .block .title span {
+        font-size: 10px;
+    }
+}
+
